@@ -3,44 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Finsweet</title>
     <link rel="stylesheet" href="./css/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <!-- header -->
-     <header class="bg-[#0D0D0D] h-20 flex justify-center items-center">
-        <div class="w-full max-w-7xl flex justify-between items-center gap-16 px-10" >
-            <a href="/index.html" class="flex w-[306px] h-20 justify-start items-center border-[#252525] lg:border-[0px_2px_0px_0px]">
-         
-                <img class="inline-block " src="./images/Logo.svg" width="132px" height="26px" alt="" aria-hidden="true">
+
+ <!-- header -->
+     <header class="bg-[#0D0D0D] h-[80px] flex justify-center items-center">
+        <div class="w-[100%] max-w-[1280px] flex justify-between items-center gap-[64px] px-10" >
+            <a href="/index.html" class="flex w-[306px] h-[80px] justify-start items-center border-[#252525] lg:border-[0px_2px_0px_0px]">
+                <img class="inline-block " src="/imgs/Logo.svg" width="132px" height="26px" alt="" aria-hidden="true">
             </a>
-            <div class="absolute top-0 left-0 py-10 gap-[50px] w-full flex flex-col justify-between items-center bg-[#0d0d0d] transform-[translateY(-100%)] transition-all duration-500  z-1 lg:z-1 lg:flex lg:static lg:py-0 lg:flex-row lg:transform-[translateY(-0%)] lg:gap-0 lg:duration-[0s]" id="togglerMenu">
+            <div class="absolute top-[0px] left-0 py-10 gap-[50px] w-full flex flex-col justify-between items-center bg-[#0d0d0d] transform-[translateY(-100%)] transition-all duration-500  z-[1] lg:z-[1] lg:flex lg:static lg:py-0 lg:flex-row lg:transform-[translateY(-0%)] lg:gap-0 lg:z-30 lg:duration-[0s]" id="togglerMenu">
             <nav class="text-white text-[16px] uppercase tracking-[0px] flex gap-[50px] flex-col text-center lg:flex-row">
                 <a href="./index.html" target="_blank" class="transition-colors duration-300 hover:text-[#FFD2A4]">home</a>
-                <a href="/about-us.html" target="_blank" class="transition-colors duration-300 hover:text-[#FFD2A4]">about us</a>
-                <a href="/sermonpage.html" target="_blank" class="transition-colors duration-300 hover:text-[#FFD2A4]">sermon</a>
-                <a href="/blogpage.html" target="_blank" class="transition-colors duration-300 hover:text-[#FFD2A4]">blog</a>
+                <a href="/about-Us.html" target="_blank" class="transition-colors duration-300 hover:text-[#FFD2A4]">about us</a>
+                <a href="/sermon.html" target="_blank" class="transition-colors duration-300 hover:text-[#FFD2A4]">sermon</a>
+                <a href="/blog.html" target="_blank" class="transition-colors duration-300 hover:text-[#FFD2A4]">blog</a>
             </nav>
-            <a href="/index.html" class="uppercase bg-[#FFD2A4] text-[16px] text-[#1C1D28] rounded-xl h-14 w-[180px] flex justify-center items-center transition-opacity duration-300 hover:opacity-[0.8]">
+            <a href="/index.html" class="uppercase bg-[#FFD2A4] text-[16px] text-[#1C1D28] rounded-[12px] h-[56px] w-[180px] flex justify-center items-center transition-opacity duration-300 hover:opacity-[0.8]">
                 Contact Us
             </a>
             </div>
-            <label for="toggler" class="flex items-center justify-center p-[6px_8px] bg-[#FFD2A4] text-[#1c1d28] text-[22px] lg:hidden rounded-sm">
+            <label for="toggler" class="flex items-center justify-center p-[6px_8px] bg-[#FFD2A4] text-[#1c1d28] text-[22px] lg:hidden rounded-[4px]">
                 <input type="checkbox" id="toggler" class="hidden" onclick="toggler(this)">
                 <span class="fa fa-bars"></span>
             </label>
             <label for="toggler" class="fixed w-full h-full top-0 left-0 transform-[translateY(-100%)] transition-all duration-500" id="togglerBg">
-                <div class="block bg-[#0d0d0d] opacity-[0.5] h-full w-full"></div>
+                <div class="block bg-[#0d0d0d] opacity-[0.5] h-full w-[100%]"></div>
             </label>
         </div>
      </header>
+         <!-- MAin  -->
+    <main>
+
+        <!-- Hero  -->
+    <div class="flex items-start justify-center flex-col bg-[url('../imgs/home/hero.png')] bg-cover bg-no-repeat h-[663px] bg-center">       
+                <div class="px-10">
+                     <p class="text-[#FFFFFF] mb-[16px] uppercase">Welcome to our CHURCH</p>
+                <h1 class="text-[#FFFFFF] text-[32px] lg:text-[64px] mb-[32px] uppercase">Become a part of <br> our community</h1>
+    
+                <div class="inline-block justify-center border-2 border-[#FFD2A4] bg-[#FFD2A4] rounded-[12px] mb-[64px]  W-[214px] h-[64px]">
+                    <a class="flex justify-center items-center text-[#1C1D28]  w-[214px] h-[64px] uppercase" href="">LEARN MORE</a>
+                </div>
+                <p class="text-[#FFFFFF]">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do.</p>
+                </div>
+    </div>
+<!-- Section  -->
+        <section hidden>
+            <div class=" flex  pt-20 pb-20 pl-20 pr-20 gap-20">
+                <div class="  bg-[#fff5ebdb] pt-10 h-[380px] w-[411px] rounded-lg  text-center ">
+                   <p class="">sub-headline</p>
+                   <h2 class="text-3xl font-bold mb-4">
+                a church that's relevant
+                   </h2>
+                </div>
+                <div class="pl-20 ">
+                    <img src="./img/xristan.png" alt="rasm">
+                    <h3>About us</h3>
+                      <p class="mb-8">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, sed do <br> eiusmod tempor incididunt ut labore et <br> dolore magna aliqua.</p>
+                </div>
+                <div class="pl-20 ">
+                    <img src="./img/tochka.png" alt="rasm">
+                    <h3>Get involved</h3>
+                      <p class="mb-8">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, sed do <br> eiusmod tempor incididunt ut labore et <br> dolore magna aliqua.</p>    
+                </div>
+                <div class="pl-20 ">
+                    <img src="./img/qo'l.ustidagiyurak.png" alt="rasm">
+                    <h3>Giving back</h3>
+                      <p class="mb-8">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, sed do <br> eiusmod tempor incididunt ut labore et <br> dolore magna aliqua.</p>               
+            </div>
+        </section>
+        <section>
+            <div>
+    
+            </div>
+        </section>
+            </main>
   <!-- Footer  -->
      <footer class="bg-[#1C1D28] text-white flex justify-center items-center py-12">
-       <div class="max-w-7xl flex flex-col items-center sm:items-start w-full gap-5 sm:grid sm:grid-cols-5 justify-between lg:gap-[50px] px-10">
+       <div class="max-w-7xl flex flex-col items-center sm:items-start w-full gap-5 sm:grid sm:grid-cols-5 sm:flex justify-between lg:gap-[50px] px-10">
          <ul class="text-[12px] uppercase flex flex-col gap-4 lg:gap-9">
             <li>
                 <a href="#" class="flex justify-center sm:justify-start">
-                             <img class="hidden sm:inline-block" src="./images/Logo2.svg" alt="Logo" aria-hidden="true">
+                             <img class="hidden sm:inline-block" src="./imgs/LogoGold.svg" alt="Logo" aria-hidden="true">
                               
                 </a>
             </li>
@@ -73,7 +120,7 @@
                 </li>
             </div>
         </ul>
-        <div class="flex gap-2 lg:gap-[30px] flex-col items-center lg:mr-25 sm:items-start">
+<div class="flex gap-2 lg:gap-[30px] flex-col items-center lg:mr-25 sm:items-start">
             <p class="text-[16px]">Connect</p>
             <ul class="flex flex-row gap-5">
                     <a href="#" class="text-[#FFD2A4]">
